@@ -30,13 +30,13 @@ LucasAndresDVready <- data.frame(predict(LucasAndresDV, newdata = LucasAndres))
 
 
 
-try <- LucasAndres
+try <- LucasAndresDVready
 
 try$Product_type<- NULL
 
 corrData <- cor(try)
 
-corrData
+View(corrData)
 
 corrplot(corrData, method="circle")
 corrData
