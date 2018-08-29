@@ -3,7 +3,6 @@ setwd("~/Desktop/Task-3---Multiple-Regression")
 LucasAndres <- read_csv("~/Desktop/Task3-MLR/LucasAndres.csv")
 View(LucasAndres)
 
-
 #LucasAndres$Dimension <- LucasAndres$Depth*LucasAndres$Width*LucasAndres$Heigth
 LucasAndres$Depth <- NULL
 LucasAndres$Width <- NULL
@@ -22,7 +21,7 @@ LucasAndres$Dimension <- NULL
 
 #LucasAndres$Dimension[is.na(LucasAndres$Dimension)] <- round(mean(LucasAndres$Dimension, na.rm = TRUE))
 
-LucasAndres <- LucasAndres[-c(34, 35, 36, 38, 39, 40, 41),] #Delete extended warranty points
+LucasAndres <- LucasAndres[-c(2, 23, 34, 35, 36, 38, 39, 40, 41, 50, 73),] #Delete extended warranty points
 
 
 View(LucasAndres)
